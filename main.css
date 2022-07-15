@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+#product-overview {
+  background: #ff1b68;
+  padding: 10px;
+  height: 528px;
+  width: 100%;
+}
+#product-overview h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+.plan-section-title {
+  color: #2ddf5c;
+}
+.main-header {
+  width: 100%;
+  background-color: #2ddf5c;
+  padding: 8px 16px;
+}
+.main-nav__item {
+  display: inline-block;
+  margin: 0 16px;
+  /*
+    inline: unos al lado de otros pero no se les puede poner padding ni margin
+    block: toman todo el espacio horizontal disponible y sí se les puede poner padding y margin
+    inline-block: unos al lado de otros pero sí se les puede poner box model 
+  */
+}
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-header__brand {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  font-size: 22px;
+}
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 74px); /* tamaño del div más el espacio en blanco */
+  vertical-align: middle;
+}
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+}
+.main-nav__item a:hover {
+  color: white;
+}
+.main-nav__item a:active {
+  color: white;
+}
