@@ -17,6 +17,7 @@ body {
 }
 .plan-section-title {
   color: #2ddf5c;
+  text-align: center;
 }
 .main-header {
   width: 100%;
@@ -76,4 +77,46 @@ body {
   color: #ff1b68;
   background-color: white;
   border: none;
+}
+
+.plan {
+  background-color: #d5ffdc;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%; /*width = ancho*/
+  vertical-align: middle;
+}
+.plan--highlithed {
+  background: #19b84c;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.plan__annotation {
+  background-color: white;
+  color: #19b84c;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.plan__title {
+  color: #0e4f1f;
+}
+.plan__price {
+  color: #858585;
+}
+.plan--highlithed .plan__price {
+  color: #0e4f1f;
+}
+.plan--highlithed .plan__title {
+  color: white;
+}
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.plan__feature {
+  margin: 8px 0;
 }
