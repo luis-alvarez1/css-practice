@@ -15,7 +15,7 @@ body {
   color: white;
   font-family: 'Anton', sans-serif;
 }
-.plan-section-title {
+.section-title {
   color: #2ddf5c;
   text-align: center;
 }
@@ -119,4 +119,45 @@ body {
 }
 .plan__feature {
   margin: 8px 0;
+}
+
+.button {
+  background-color: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:active,
+.button:hover {
+  background-color: white;
+  color: #0e4f1f;
+}
+
+/*outline es una especia de border 
+pero no hace parte del box-model en sí.
+Viene antes del margin y después del border*/
+.button:hover {
+  outline: none;
+}
+
+#key-features {
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+.key-feature__list {
+}
+.key-feature {
+}
+.key-feature__description {
 }
