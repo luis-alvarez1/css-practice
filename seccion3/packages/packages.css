@@ -44,6 +44,7 @@ main {
   background-color: white;
   font-family: 'AnonymousPro', sans-serif;
   font-weight: 700;
+  /* font: 700 1.2rem "AnonymousPro", sans-serif; */
 }
 .clearfix {
   clear: both;
