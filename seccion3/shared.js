@@ -11,7 +11,10 @@ if (selectPlanButtonList) {
       // modal.style.display = 'block';
       // backdrop.style.display = 'block';
       modal?.classList.add('visible');
-      backdrop?.classList.add('visible');
+      backdrop.style.display = 'block';
+      setTimeout(() => {
+        backdrop?.classList.add('visible');
+      }, 10);
     });
   }
 }
@@ -21,6 +24,9 @@ const hideModal = () => {
   // backdrop.style.display = 'none';
   modal?.classList.remove('visible');
   backdrop?.classList.remove('visible');
+  setTimeout(() => {
+    backdrop.style.display = 'none';
+  }, 200);
 };
 cancelButton?.addEventListener('click', hideModal);
 backdrop?.addEventListener('click', () => {
@@ -30,5 +36,8 @@ backdrop?.addEventListener('click', () => {
 
 toggleButton?.addEventListener('click', () => {
   mobileNav?.classList.add('visible');
-  backdrop?.classList.add('visible');
+  backdrop.style.display = 'block';
+  setTimeout(() => {
+    backdrop?.classList.add('visible');
+  }, 10);
 });

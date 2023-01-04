@@ -30,8 +30,10 @@ main {
   grid-area: main;
 }
 .backdrop {
-  position: fixed;
   display: none;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.2s;
   top: 0;
   left: 0;
   z-index: 100;
@@ -116,6 +118,10 @@ main {
   border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+  animation: wiggle 400ms 3s 8 ease-out none;
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
@@ -171,7 +177,7 @@ main {
 }
 
 .mobile-nav {
-  display: none;
+  transform: translateX(-100%);
   position: fixed;
   z-index: 101;
   top: 0;
@@ -179,6 +185,7 @@ main {
   background: white;
   width: 80%;
   height: 100vh;
+  transition: transform 0.3s ease-out;
 }
 
 .mobile-nav__items {
@@ -231,11 +238,27 @@ main {
 
 .visible {
   display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 @media (max-width: 40rem) {
   .main-footer__link {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  50% {
+    transform: rotateZ(-10deg);
+  }
+
+  100% {
+    transform: rotateZ(10deg);
   }
 }
