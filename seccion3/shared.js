@@ -7,8 +7,8 @@ const toggleButton = document.querySelector('.toggle-button');
 const ctaButton = document.querySelector('.main-nav__item--cta');
 
 if (selectPlanButtonList) {
-  for (let i = 0; i < selectPlanButtonList.length; i++) {
-    selectPlanButtonList[i].addEventListener('click', () => {
+  for (const element of selectPlanButtonList) {
+    element.addEventListener('click', () => {
       // modal.style.display = 'block';
       // backdrop.style.display = 'block';
       modal?.classList.add('visible');
