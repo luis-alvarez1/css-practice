@@ -56,10 +56,9 @@ body {
   @include media-min-width(40rem) {
     width: 30rem;
   }
-}
-
-.sass-introduction p {
-  margin: 0;
+  p {
+    margin: 0;
+  }
 }
 
 .sass-details {
@@ -92,11 +91,12 @@ body {
     display: block;
     padding: $size-tiny;
     border: $border-default;
-  }
-  .documentation-link:hover,
-  .documentation-link:active {
-    color: white;
-    background: map-get($map: $colors, $key: secondary);
-    border-color: map-get($map: $colors, $key: secondary);
+
+    &:hover,
+    &:active {
+      color: white;
+      background: map-get($map: $colors, $key: secondary);
+      border-color: map-get($map: $colors, $key: secondary);
+    }
   }
 }
